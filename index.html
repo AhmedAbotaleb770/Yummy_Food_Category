@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Yummy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- onloading body call gategories -->
+
+<body onload="getCategories()">
+    <!-- start of loading spinner -->
+    <section id="spinner" class="justify-content-center align-items-center ">
+        <div class="sk-fading-circle">
+            <div class="sk-circle1 sk-circle"></div>
+            <div class="sk-circle2 sk-circle"></div>
+            <div class="sk-circle3 sk-circle"></div>
+            <div class="sk-circle4 sk-circle"></div>
+            <div class="sk-circle5 sk-circle"></div>
+            <div class="sk-circle6 sk-circle"></div>
+            <div class="sk-circle7 sk-circle"></div>
+            <div class="sk-circle8 sk-circle"></div>
+            <div class="sk-circle9 sk-circle"></div>
+            <div class="sk-circle10 sk-circle"></div>
+            <div class="sk-circle11 sk-circle"></div>
+            <div class="sk-circle12 sk-circle"></div>
+        </div>
+    </section>
+    <!-- end of loading spinner -->
+
+    <!-- start of nav side -->
+    <div class="side-nav-menu vh-100 position-fixed d-flex top-0 bg-black" style="left: 0px;">
+        <div class="nav-tab  d-flex flex-column justify-content-between vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden text-white">
+                    <li onclick="showSearchInputs(); closeSideNav()" class="py-2 position-relative">Search</li>
+                    <li onclick="getCategories(); closeSideNav()" class="py-2 position-relative">Categories</li>
+                    <li onclick="getArea(); closeSideNav()" class="py-2 position-relative">Area</li>
+                    <li onclick="getIngredients(); closeSideNav()" class="py-2 position-relative">Ingredients</li>
+                    <li onclick="showContacts(); closeSideNav()" class="py-2 position-relative">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer text-white">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="images/logo.png" alt="icon.fa" width="50px">
+            <i class="fa-solid open-close-icon fa-2x fa-x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <!-- end of nav side -->
+
+    <!-- start of search container -->
+    <div class="container w-75" id="searchContainer">
+
+    </div>
+    <!-- end of search container -->
+
+    <!-- start of main container -->
+    <div class="container">
+        <div id="rowData" class="row py-5 g-4">
+
+        </div>
+    </div>
+    <!-- end of main container -->
+    <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
